@@ -51,7 +51,6 @@ public class AccountTests {
 	@Test
 	public void withdrawShouldThrowWhenInsufficientBalance() {
 		
-		
 		Assertions.assertThrows(IllegalArgumentException.class, () -> {
 			Account acc = AccountFactory.createAccount(800);
 			acc.withdraw(801);
