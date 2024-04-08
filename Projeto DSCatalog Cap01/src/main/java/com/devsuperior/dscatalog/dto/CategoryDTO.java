@@ -9,7 +9,7 @@ public class CategoryDTO implements Serializable {
 
 	private Long id;
 	private String name;
-	
+
 	public CategoryDTO() {
 	}
 
@@ -17,7 +17,7 @@ public class CategoryDTO implements Serializable {
 		this.id = id;
 		this.name = name;
 	}
-	
+
 	public CategoryDTO(Category entity) {
 		this.id = entity.getId();
 		this.name = entity.getName();
