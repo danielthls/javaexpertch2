@@ -13,7 +13,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name = "tb_role")
-public class Role implements GrantedAuthority{
+public class Role implements GrantedAuthority {
 
 	private static final long serialVersionUID = 1L;
 	
@@ -62,8 +62,5 @@ public class Role implements GrantedAuthority{
 		Role other = (Role) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
-	
 	
 }

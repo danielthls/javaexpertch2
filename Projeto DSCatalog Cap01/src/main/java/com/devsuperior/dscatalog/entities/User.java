@@ -96,6 +96,21 @@ public class User implements Serializable, UserDetails{
 	public Set<Role> getRoles() {
 		return roles;
 	}
+	
+	
+	
+	public void addRole(Role role) {
+		roles.add(role);
+	}
+	
+	public boolean hasRole(String authority) {
+		for(Role role: roles) {
+			if(role.getAuthority().equals(authority)) {
+				return true;
+			}
+		}
+		return false;
+	}
 
 	@Override
 	public int hashCode() {
